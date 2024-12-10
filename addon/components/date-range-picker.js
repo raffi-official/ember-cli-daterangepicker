@@ -72,7 +72,7 @@ export default Component.extend({
                 return moment(start, serverFormat).format(format) + this.get('separator') + moment(end, serverFormat).format(format);
             }
         }
-        if (this.get('singleDatePicker') && isPresent(start)) {
+        if (this.get('singleDatePicker') && isPresent(start) && chosenLabel === 'Custom Range') {
             if(moment.isMoment(start) && start._f === this.serverFormat){
                 return start.format(format);
             }
