@@ -389,7 +389,7 @@
             this.container.find('.calendar.left').addClass('single');
             this.container.find('.calendar.left').show();
             this.container.find('.calendar.right').hide();
-            this.container.find('.daterangepicker_input input, .daterangepicker_input > i').hide();
+            this.container.find('.daterangepicker_input input, .daterangepicker_input > i, .daterangepicker_input .daterangepicker_input_icon').hide();
             if (this.timePicker) {
                 this.container.find('.ranges ul').hide();
             } else {
